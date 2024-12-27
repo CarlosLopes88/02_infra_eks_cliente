@@ -348,6 +348,6 @@ variable "db_name" {
 }
 
 output "microservice_cliente_loadbalancer_endpoint" {
-  description = "Endpoint do LoadBalancer serviço microservice-cliente"
+  description = "Endpoint do LoadBalancer serviço para o microservice-cliente"
   value       = kubernetes_service.microservice_cliente.status[0].load_balancer[0].ingress[0].hostname
 }
